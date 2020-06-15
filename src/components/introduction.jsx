@@ -1,9 +1,9 @@
 import React, {Component} from "react";
-
+import styled from "styled-components";
 export default class Introduction extends Component {
   render() {
     return (
-      <div>
+      <StyledIntro>
         <section
           id="colorlib-hero"
           className="js-fullheight"
@@ -24,7 +24,7 @@ export default class Introduction extends Component {
                           </h1>
                           <p>
                             <a
-                              className="btn btn-primary btn-learn"
+                              className="btn btn-primary "
                               href="https://cvlogin.com/cv/7cd6e68846f37043194f2727527f0878"
                               target="_blank"
                               rel="noopener noreferrer"
@@ -52,7 +52,7 @@ export default class Introduction extends Component {
                           </h1>
                           <p>
                             <a
-                              className="btn btn-primary btn-learn"
+                              className="btn btn-primary "
                               href="https://github.com/Shahriar-Shakil"
                               target="_blank"
                               rel="noopener noreferrer"
@@ -79,7 +79,7 @@ export default class Introduction extends Component {
                           </h1>
                           <p>
                             <a
-                              className="btn btn-primary btn-learn"
+                              className="btn btn-primary "
                               href="https://mrshahriar.blogspot.com/"
                               target="_blank"
                               rel="noopener noreferrer"
@@ -96,7 +96,26 @@ export default class Introduction extends Component {
             </ul>
           </div>
         </section>
-      </div>
+      </StyledIntro>
     );
   }
 }
+const StyledIntro = styled.div`
+  .desc {
+    h1 {
+      color: #fff !important;
+      text-shadow: 0 0 8px #c02a2a;
+    }
+    p {
+      a {
+        border: 1px solid #000 !important ;
+        color: #fff !important;
+        text-shadow: 0 0 8px #c02a2a;
+        background: #ec071b5e !important;
+        :hover {
+          background: #ec071b !important;
+        }
+      }
+    }
+  }
+`;
